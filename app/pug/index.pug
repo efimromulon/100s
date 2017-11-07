@@ -1,0 +1,45 @@
+doctype html
+html
+	body
+		.wrapper_left
+			.logo
+				.img(src="img/logo.png")
+			.social
+				a(href="#")i.fa.fa-mobile(aria-hidden='true')+7 (965) 340-50-94
+				a(href="#")i.fa.fa-envelope-o(aria-hidden='true')100secrvices@mail.ru
+				a(href="#")i.fa.fa-vk(aria-hidden='true')/100_services/
+				a(href="#")i.fa.fa-facebook-official(aria-hidden='true')/100_services/
+				a(href="#")i.fa.fa-odnoklassniki(aria-hidden='true')/100_services/
+			.vacancy
+				h4
+					|Ищешь работу?
+				h5
+					|Предлагаем работу рядом с домом и с высокой зарплатой
+			button.vacancy_button(href="#")
+				|ВАКАНСИИ
+			.footer
+				|100 УСЛУГ&copy;20092017
+		.wrapper_right
+			.top_menu
+				nav.top_menu_nav
+					ul
+						li ГЛАВНАЯ
+						li ЦЕНЫ
+						li САЛОНЫ
+						li УСЛУГИ
+						li ВАКАНСИИ
+						li ЗАПИСАТЬСЯ
+			.call_back
+				form.grid
+					div
+						input(type = 'text', name = 'name', placeholder = 'Имя...', required ='')
+					div
+						input(type = 'text', name = 'name', placeholder = 'Фамилия...')
+					div
+						input(type = 'text', name = 'name', placeholder = 'Телефон...')
+					div
+						button.button Записаться!
+		link(rel='stylesheet', href='css/index.min.css')
+		script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
+		script(src='js/scripts.min.js')
+		script(src='js/jquery-2.1.4.js')
