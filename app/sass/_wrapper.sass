@@ -1,0 +1,125 @@
+$h-img: calc(100vh - 10.625vw)
+$h-2: calc(100vh - $h-img)
+.wrapper
+	background-image: url("../img/header_1.jpg")
+	background-size: cover
+	background-position: 52% 0%
+	width: 100vw
+	height: 100vh
+
+	grid-template-columns: repeat(2, 15vw 85vw)
+
+.wrapper_item
+	height: 100vh
+
+.wrapper_left
+	background-color: rgba( 16, 16, 16, 0.79)
+	position: fixed
+	top: 0
+	left: 0
+.wrapper_right
+	position: absolute
+	top: 0
+	left: 15vw
+.logo
+	height: 10vw
+	width: 15vw
+	margin: 2.5vw 0 0 0
+	img
+		height: 10vw
+		width: 10vw
+		margin: 0 2.5vw 0 2.5vw
+.social
+	width: 15vw
+	margin-top: 50px
+	padding: 0 1.25vw
+	align-content: center
+	font-size: 23px
+	color: #fff
+	font-family: 'MyriadProRegular'
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		width: 15vw
+		font-family: 'MyriadProRegular'
+		li
+			list-style: none
+			i
+				width: 1.5vw
+				height: 1.5vw
+				text-align: center
+			a
+				text-decoration: none
+				color: inherit
+				font-family: 'MyriadProRegular'
+.vacancy
+	width: 10vw
+	margin: 24vh 2.5vw 0 2.5vw
+	padding: 0 1.25vw
+	padding: 0
+	font-family: 'MyriadProRegular'
+	h4
+		font-size: 27px
+		color: rgba( 255, 255, 255, 0.39)
+		margin: 0
+		padding: 0
+	h5
+		font-size: 21px
+		color: #fff
+		margin: 0
+		padding: 0
+		text-align: center
+		text-align-last: middle
+		text-align
+.vacancy_button
+	background-color: $pink
+	text-decoration: none
+	border: none
+	width: 10vw
+	height: 50px
+	margin: 0 2.5vw
+
+.footer
+	font-family: 'AzoftSansBold'
+	font-size: 17.5px
+	color: rgba( 255, 255, 255, 0.59)
+	width: 10vw
+	margin: 2vh 2.5vw 0 2.5vw
+
+.top_menu
+	width: 85vw
+	top: 0
+.top_menu_nav
+	margin-top: 2.5vw
+	ul
+		margin: 0 16vw
+		padding: 0
+		list-style: none
+		text-align: center
+		li
+			display: inline-block
+			width: 150px
+			a
+				text-decoration: none
+				color: #fff
+				font-family: 'MyriadProBold'
+.call_back
+	background-color: $dark
+	margin: 85vh 16vw 0 16vw
+	form
+		padding: 0
+		grid-gap: $gutter
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: 1fr
+		height: 50px
+		align-content: center
+		input
+			width: 11vw
+.cb_item
+	display: inline-block
+	margin: auto
+	button
+		width: 11vw
+		background-color: $pink
+		border: none	
