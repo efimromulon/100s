@@ -1,0 +1,74 @@
+@import "vars"
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 2560px)
+	.metro_select_ul
+		a
+			font-size: 1vw
+	.wr_salon_select
+		grid-template-columns: repeat(1, 3fr 5fr)
+		grid-template-rows: repeat(1, 35.73vh 50.223vh)
+		padding: 40px
+	.wr_salon_select-item
+		background-size: cover
+		z-index: 2
+		&:nth-child(1)
+			grid-column: 1
+			grid-row: 1
+		&:nth-child(2)
+			grid-column: 2
+			grid-row: 1
+		&:nth-child(3)
+			grid-column: 1
+			grid-row: 2
+		&:nth-child(4)
+			grid-column: 2
+			grid-row: 2
+	.metro_select_ul
+		padding: 0
+		margin: 0
+		list-style: none
+		a
+			font-family: 'AzoftSansRegular'
+			text-decoration: none
+			outline: none
+			display: block
+			padding: 6px 0
+			letter-spacing: 1px
+			line-height: 39px
+			font-weight: 300
+			color: #fff
+	.metro_icon
+		height: 25.59px
+		width: 25.59px
+		background-size: cover
+		display: inline-block
+		vertical-align: text-top
+	.metro_name
+		margin-left: 1vw
+		height: 1vw
+		display: inline-block
+		vertical-align: text-center
+		position: relative
+		&::after
+			content: ''
+			display: block
+			height: 2px
+			width: 650px
+			background-color: $blue
+			position: absolute
+			left: 100%
+			top: 50%
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1440px)
+	.test
+@media only screen and (max-width : 1024px)
+	.test
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.test
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.test
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.test

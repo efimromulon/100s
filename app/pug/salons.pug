@@ -1,0 +1,54 @@
+doctype html
+html
+	body
+		.wrapper.grid
+			.wrapper_left.wrapper_item
+				include includes/left_menu.pug
+			.wrapper_right.wrapper_item
+				include includes/top_menu.pug
+				.wr_salon_select.grid
+					.wr_salon_select-item
+						.metro_select
+							ul.metro_select_ul
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name ЭЛЕКТРОЗАВОДСКАЯ
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name КРАСНЫЕ ВОРОТА
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name ТАГАНСКАЯ
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name РАМЕНКИ
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name УНИВЕРСИТЕТ
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name ПРОСПЕКТ ВЕРНАДСКОГО
+								li
+									a(href="#")
+										span.metro_icon(style = 'background-image: url(../img/metro-white.png)')
+										span.metro_name КАШИРСКОГО
+
+					.wr_salon-select-item(style = 'background-image: url(../img/33.jpg); background-size: cover')
+					.wr_salon-select-item(style = 'background-image: url(../img/map.jpg); background-size: cover')
+					.wr_salon-select-item
+
+		link(rel='stylesheet', href='css/salons.min.css')
+		script(src='https://use.fontawesome.com/e21d0d3332.js')
+		script(src='js/jquery-2.1.4.js')
+		script(src='js/scripts.min.js')
+
