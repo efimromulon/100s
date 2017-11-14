@@ -3,73 +3,58 @@ html
 	body
 		.wrapper.grid
 			.wrapper_left.wrapper_item
-				.logo
-					img(src="../img/logo.png")
-				.social
-					ul
-						li
-							a(href="#")
-								i.fa.fa-mobile(aria-hidden='true')
-								| +7 (965) 340-50-94
-						li
-							a(href="#")
-								i.fa.fa-envelope-o(aria-hidden='true')
-								| 100secrvices@mail.ru
-						li
-							a(href="#")
-								i.fa.fa-vk(aria-hidden='true')
-								| 100_services/
-						li
-							a(href="#")
-								i.fa.fa-facebook-official(aria-hidden='true')
-								| 100_services/
-						li
-							a(href="#")
-								i.fa.fa-odnoklassniki(aria-hidden='true') 
-								| 100_services/
-				.vacancy
-					h4
-						| Ищешь работу?
-					h5
-						| Предлагаем работу рядом с домом и с высокой зарплатой
-				button.vacancy_button(href="#")
-					| ВАКАНСИИ
-				.footer
-					| 100 УСЛУГ&copy;20092017
-
+				include includes/left_menu.pug
 			.wrapper_right.wrapper_item
-				.top_menu
-					nav.top_menu_nav
-						ul
-							li
-								a(href="#") 
-									| ГЛАВНАЯ
-							li
-								a(href="#") 
-									| ЦЕНЫ
-							li
-								a(href="#") 
-									| САЛОНЫ
-							li
-								a(href="#") 
-									| УСЛУГИ
-							li
-								a(href="#") 
-									| ВАКАНСИИ
-							li
-								a(href="#") 
-									| ЗАПИСАТЬСЯ
+				include includes/top_menu.pug
 				.call_back
 					form.grid
-						div.cb_item
+						.cb_item
 							input(type = 'text', name = 'name', placeholder = 'Имя...', required ='')
-						div.cb_item
+						.cb_item
 							input(type = 'text', name = 'name', placeholder = 'Фамилия...')
-						div.cb_item
+						.cb_item
 							input(type = 'text', name = 'name', placeholder = 'Телефон...')
-						div.cb_item
+						.cb_item
 							button.button
 								| Записаться!
+				.gallery.grid
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/1.jpg)')
+							span.gallery-name Парикмахерские услуги
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/map.jpg)')
+							span.gallery-name Выбрать салон
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/b3.jpg)')
+							span.gallery-name Маникюр
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/feet.jpg)')
+							span.gallery-name Педикюр
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/act.jpg)')
+							span.gallery-name Акции
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/b2.jpg)')
+							span.gallery-name Косметология
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/b5.jpg)')
+							span.gallery-name Солярий
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/b4.jpg)')
+							span.gallery-name Массаж
+					.gallery-item.grid
+						a(href="#")
+							span.gallery-img(style = 'background-image: url(../img/7.jpg)')
+							span.gallery-name Вакансии
+
 		link(rel='stylesheet', href='css/index.min.css')
 		script(src='https://use.fontawesome.com/e21d0d3332.js')
 		script(src='js/jquery-2.1.4.js')

@@ -1,10 +1,308 @@
 @import "vars"
-
 /*==========  Desktop First  ==========*/
-@media only screen and (max-width : 2000px)
-	.test
+@media only screen and (max-width : 2560px)
+	.vacancy
+		h4
+			font-size: 1.47vw
+			text-align: justify
+		h5
+			font-size: 1.18vw
+			text-align: justify
+			line-height: 1.4
+	.vacancy_button
+		font-size: 1.1vw
+	.footer
+		font-size: 0.91vw
+	.social
+		font-size: 0.96vw
+	.gallery-item
+		span
+			font-size: 0.96vw
+			font-family: 'AzoftSansRegular'
+	.wrapper
+		background-position: 52% 0%
+		width: 100vw
+		height: 100vh
+		grid-template-columns: repeat(2, 15vw 85vw)
+	.wrapper_item
+		height: 100vh
+	.wrapper_left
+		position: fixed
+		top: 0
+		left: 0
+	.wrapper_right
+		position: absolute
+		top: 0
+		left: 15vw
+	.logo
+		height: 10vw
+		width: 10vw
+		margin: 2.5vw 2.5vw 0 2.5vw
+		img
+			height: 10vw
+			width: 10vw
+	.social
+		width: 10vw
+		margin: 1vh 2.5vw 0 2.5vw
+		position: absolute
+		top: 15vw
+		ul
+			margin: 0
+			padding: 0
+			width: 15vw
+			li
+				list-style: none
+				i
+					width: 1.5vw
+					height: 1.5vw
+				a
+	.vacancy
+		width: 10vw
+		margin: 0 2.5vw 1vh 2.5vw
+		padding: 0
+		position: absolute
+		bottom: 15vh
+		h4
+			margin: 0
+			padding: 0
+		h5
+			margin: 0
+			padding: 0
+	.vacancy_button
+		width: 10vw
+		height: 50px
+		margin: 0 2.5vw
+		position: absolute
+		bottom: 10vh
+	.footer
+		width: 10vw
+		margin: 2vh 2.5vw 2vh 2.5vw
+		position: absolute
+		bottom: 0
+	.top_menu
+		width: 85vw
+		top: 0
+	.top_menu_nav
+		margin-top: 2.5vw
+		ul
+			margin: 0 16vw
+			padding: 0
+			li
+				width: 8.5vw
+				a
+					transition: color 0.085s ease-in
+					position: relative
+					&:hover
+						color: $blue
+						&::before
+							width: 50%
+							left: 0
+						&::after
+							width: 50%
+					&::before
+						content: ''
+						position: absolute
+						display: block
+						width: 0
+						height: 2px
+						background-color: $blue
+						top: 30px
+						left: 50%
+						bottom: 0
+						transition: width 0.17s ease-in-out, left 0.17s ease-in-out
+					&::after
+						content: ''
+						position: absolute
+						display: block
+						width: 0
+						height: 2px
+						background-color: $blue
+						top: 30px
+						left: 50%
+						bottom: 0
+						transition: width 0.17s ease-in-out
+
+	#top_menu_cb 
+		color: $pink
+	.call_back
+		margin: 85vh 16vw 1.6vh 16vw
+		form
+			padding: 0
+			grid-gap: $gutter
+			grid-template-columns: repeat(4, 1fr)
+			grid-template-rows: 1fr
+			height: 50px
+			input
+				width: 11vw
+	.cb_item
+		margin: auto
+		button
+			width: 11vw
+	.gallery
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: repeat(3, 1fr)
+		height: 100vh
+		width: 85vw
+		top: 100vh
+		position: absolute
+	.gallery-item
+		position: relative
+		transition: transform 0.3s ease-in
+		overflow: hidden
+		&:hover
+			.gallery-img
+				transform: scale(1.15)
+				filter: none
+			.gallery-name
+				opacity: 1
+				background-color: #000
+				&:hover
+					color: $blue
+		&:nth-child(1)
+			grid-column: 1
+			grid-row: 1
+		&:nth-child(2)
+			grid-column: 2
+			grid-row: 1
+		&:nth-child(3)
+			grid-column: 3
+			grid-row: 1
+		&:nth-child(4)
+			grid-column: 1
+			grid-row: 2
+		&:nth-child(5)
+			grid-column: 2
+			grid-row: 2
+		&:nth-child(6)
+			grid-column: 3
+			grid-row: 2
+		&:nth-child(7)
+			grid-column: 1
+			grid-row: 3
+		&:nth-child(8)
+			grid-column: 2
+			grid-row: 3
+		&:nth-child(9)
+			grid-column: 3
+			grid-row: 3
+	.gallery-img
+		background-size: cover
+		background-position: center
+		transition: transform 0.17s ease-in, filter 0.17s ease-in
+		padding: 0.5vh 0.5vw
+		filter: none
+		color: #fff
+		height: 100%
+		width: 100%
+		position: absolute
+		filter: grayscale(100%)
+	.gallery-name
+		opacity: 0
+		position: absolute
+		top: 80%
+		right: 7%
+		color: #fff
+		padding: 0.5vh 0.5vw
+		transition: background-color 0.17s ease-in 0.085s, color 0.17s ease-in, opacity 0.17s ease-in 0.085s
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
+@media only screen and (max-width : 1440px)
+	.vacancy
+		h4
+			font-size: 1.47vw
+			text-align: justify
+		h5
+			font-size: 1.18vw
+			text-align: justify
+			line-height: 1.4
+	.footer
+		font-size: 0.91vw
+	.social
+		font-size: 0.945vw
+	.wrapper
+		background-position: 52% 0%
+		width: 100vw
+		height: 100vh
+		grid-template-columns: repeat(2, 15vw 85vw)
+	.wrapper_item
+		height: 100vh
+	.wrapper_left
+		position: fixed
+		top: 0
+		left: 0
+	.wrapper_right
+		position: absolute
+		top: 0
+		left: 15vw
+	.logo
+		height: 10vw
+		width: 10vw
+		margin: 2.5vw 2.5vw 0 2.5vw
+		img
+			height: 10vw
+			width: 10vw
+	.social
+		width: 10vw
+		margin: 1vh 2.5vw 0 2.5vw
+		position: absolute
+		bottom: 50vh
+		ul
+			margin: 0
+			padding: 0
+			width: 10vw
+			li
+				list-style: none
+				i
+					width: 1.5vw
+					height: 1.5vw
+				a
+	.vacancy
+		width: 10vw
+		margin: 32vh 2.5vw 1vh 2.5vw
+		padding: 0
+		position: absolute
+		bottom: 15vh
+		h4
+			margin: 0
+			padding: 0
+		h5
+			margin: 0
+			padding: 0
+	.vacancy_button
+		width: 10vw
+		height: 50px
+		margin: 0 2.5vw
+	.footer
+		width: 10vw
+		margin: 2vh 2.5vw 2vh 2.5vw
+		position: absolute
+		bottom: 0
+	.top_menu
+		width: 85vw
+		top: 0
+	.top_menu_nav
+		margin-top: 2.5vw
+		ul
+			margin: 0 16vw
+			padding: 0
+
+			li
+				width: 8.5vw
+				a
+	.call_back
+		margin: 85vh 16vw 0 16vw
+		form
+			padding: 0
+			grid-gap: $gutter
+			grid-template-columns: repeat(4, 1fr)
+			grid-template-rows: 1fr
+			height: 50px
+			input
+				width: 11vw
+	.cb_item
+		margin: auto
+		button
+			width: 11vw
+@media only screen and (max-width : 1024px)
 	.test
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
