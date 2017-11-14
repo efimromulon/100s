@@ -108,7 +108,14 @@ body
 	display: inline-block
 	button
 		background-color: $pink
-		border: none	
+		border: none
+.top_menu_nav_anim_is_active.top_menu_nav_anim
+	color: $blue
+	&::before
+		width: 50%
+		left: 0
+	&::after
+		width: 50%
 .top_menu_nav_anim
 	transition: color 0.085s ease-in
 	position: relative
