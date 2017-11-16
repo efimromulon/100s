@@ -1,0 +1,40 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "wrapper"
+.grid
+	display: grid
+.body
+	transition: font-size 0.2s ease-in
+.top_menu
+	transition: width 0.2s ease-in
+.wrapper
+	background-color: #1A1A1A
+	background-image: none
+.wr_p_left_select
+	ul, a
+		text-decoration: none
+		list-style: none
+		font-family: 'AzoftSansRegular'
+		color: #fff
+.wr_p_left_select
+	ul
+		a.active
+			color: $blue
+		a.in_active
+			opacity: .1
+.li_1lvl > a.wr_p_left_select_in_active
+	opacity: 0.1
+.li_2lvl > a.wr_p_left_select_in_active
+	opacity: 0.1
+.li_1lvl > a.wr_p_left_select_is_active
+	color: $blue
+.li_2lvl > a.wr_p_left_select_is_active
+	color: $blue
+.ul_2lvl
+	display: none
+.ul_3lvl
+	display: none
+@import "media-index"
+@import "media-prices"
