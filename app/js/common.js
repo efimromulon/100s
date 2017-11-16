@@ -65,9 +65,34 @@ $(document).ready(function() {
 	})
 });
 
+$(document).ready(function() {
+	$('#burger').on( "click", function() {
+		$('#burger').toggleClass('hamburger_is_active');
+		$("#myNav").css("width", "100%");
+	});
+});
+$(document).ready(function() {
+	$("#myNav:not(a)").on( "click", function() {
+		$("#myNav").css("width", "0%");
+		$('#burger').toggleClass('hamburger_is_active');
+	});
+});
 
+$(document).ready(function() {
+	$('.call_back_button').on( "click", function() {
+		$("#myNav_1").css("width", "100%");
+	});
+});
 
-
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".overlay-content"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$("#myNav_1").css("width", "0%"); // скрываем его
+		}
+	});
+});
 $(document).ready(function(){
 
 	$(".wr_price_select a").click(function(){
@@ -82,16 +107,50 @@ $(document).ready(function(){
 		if ($(this).parent().children().hasClass("active")){
 
 			$(this).parent().find("a").removeClass("active");
-			$(this).parent().find("ul").slideUp("10");
+			$(this).parent().find("ul").slideUp("fast");
 			$(this).parent().find("a").removeClass("in_active");
 			$(this).parent().siblings().find("a").removeClass("in_active");
 			$(this).parent().siblings().children().find("a").removeClass("in_active");
-			
+
 		} else {
 
-			$(this).next("ul").slideToggle("10");
+			$(this).next("ul").slideToggle("fast");
 			$(this).toggleClass("active");
-			$(this).parent().siblings().find("ul").slideUp("10");
+			$(this).parent().siblings().find("ul").slideUp("fast");
+			$(this).parent().siblings().find("a").removeClass("active");
+			$(this).parent().siblings().find("a").addClass("in_active");
+
+		};
+
+
+
+	});
+
+});
+$(document).ready(function(){
+
+	$(".wr_service_select a").click(function(){
+
+		if ($(this).parent().children().hasClass("in_active")){
+
+			$(this).parent().find("a").removeClass("in_active");
+			$(this).parent().siblings().find("a").removeClass("in_active");
+			$(this).parent().siblings().children().find("a").removeClass("in_active");
+		};	
+
+		if ($(this).parent().children().hasClass("active")){
+
+			$(this).parent().find("a").removeClass("active");
+			$(this).parent().find("ul").slideUp("fast");
+			$(this).parent().find("a").removeClass("in_active");
+			$(this).parent().siblings().find("a").removeClass("in_active");
+			$(this).parent().siblings().children().find("a").removeClass("in_active");
+
+		} else {
+
+			$(this).next("ul").slideToggle("fast");
+			$(this).toggleClass("active");
+			$(this).parent().siblings().find("ul").slideUp("fast");
 			$(this).parent().siblings().find("a").removeClass("active");
 			$(this).parent().siblings().find("a").addClass("in_active");
 

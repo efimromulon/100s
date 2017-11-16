@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <div class="overlay" id="myNav">
-      <div class="overlay-content"><a href="javascript:void(0)">ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ</a><a href="javascript:void(0)">ЭЛЕКТРОЗАВОДСКАЯ</a><a href="javascript:void(0)">КРАСНЫЕ ВОРОТА</a><a href="javascript:void(0)">ТАГАНСКАЯ</a><a href="javascript:void(0)">РАМЕНКИ</a><a href="javascript:void(0)">УНИВЕРСИТЕТ</a><a href="javascript:void(0)">ПРОСПЕКТ ВЕРНАДСКОГО</a><a href="javascript:void(0)">КАШИРСКАЯ</a></div>
+    <div class="overlay" id="myNav_1">
+      <div class="overlay-content">
+        <div class="call_back_ol">
+          <form class="grid">
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Имя..." required="">
+            </div>
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Фамилия...">
+            </div>
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Телефон...">
+            </div>
+            <div class="cbol_item">
+              <button class="button">Записаться!</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div class="wrapper grid">
       <div class="wrapper_left wrapper_item">
@@ -39,15 +56,9 @@
             </ul>
           </nav>
         </div>
-        <div class="wr_price_select grid">
-          <div class="wr_price_select-item">
-            <div class="wr_p_metro_info_icon">
-              <button class="header_burger hamburger" id="burger" type="button"><span class="hamburger_box"><span class="hamburger_inner"></span></span></button>
-            </div>
-            <div class="wr_p_metro_info_name">ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ</div>
-          </div>
-          <div class="wr_price_select-item">
-            <div class="wr_p_left_select">
+        <div class="wr_service_select grid">
+          <div class="wr_service_select-item">
+            <div class="wr_s_left_select">
               <ul class="ul_1lvl">
                 <li class="li_1lvl li1"><a class="usual_a" href="#">ПАРИКМАХЕРСКИЕ УСЛУГИ</a>
                   <ul class="ul_2lvl">
@@ -112,139 +123,22 @@
               </ul>
             </div>
           </div>
-          <div class="wr_price_select-item">
-            <div class="table_head">
-              <div class="th_name_1">ЖЕНСКИЙ ЗАЛ ЭКОНОМ</div>
-              <div class="th_name_2">СТРИЖКИ, УКЛАДКИ, ПРИЧЕСКИ</div>
+          <div class="wr_service_select-item">
+            <div class="service_box grid">
+              <div class="service_box-item" style="background-image: url(../img/hairdresser.jpg);"></div>
+              <div class="service_box-item">
+                <h3>Оформление бороды</h3>
+                <p>Наличие усов и бороды раньше считалось подтверждением серьезности ужчины, в наше время это не больше чем украшение. Многие дамы считают мужчин, обладающих растительностью на лице более привлекательными, а представители сильного пола, обзаведшись бородой, чувствуют себя брутальными самцами или просто считают это признаком творческой личности. Но есть одно условие – борода и усы просто обязаны быть ухоженными, иначе никакой привлекательности этот атрибут добавить не сможет. Поэтому решение начать отращивать усы и бороду явно не для мужчин, собирающихся просто избавиться от надоевшего ежедневного бритья.</p>
+                <p>Наличие усов и бороды раньше считалось подтверждением серьезности ужчины, в наше время это не больше чем украшение. Многие дамы считают мужчин, обладающих растительностью на лице более привлекательными, а представители сильного пола, обзаведшись бородой, чувствуют себя брутальными самцами или просто считают это признаком творческой личности. Но есть одно условие – борода и усы просто обязаны быть ухоженными, иначе никакой привлекательности этот атрибут добавить не сможет. Поэтому решение начать отращивать усы и бороду явно не для мужчин, собирающихся просто избавиться от надоевшего ежедневного бритья.</p>
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
             </div>
-            <table>
-              <tbody>
-                <tr>
-                  <th></th>
-                  <th>короткие волосы</th>
-                  <th>средние волосы</th>
-                  <th>длинные волосы</th>
-                  <th>волосы от 40см.</th>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка модельная</td>
-                  <td>200₽</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка креативная</td>
-                  <td>250₽</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка детская (до 7лет)</td>
-                  <td>150₽</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка пенсионерам</td>
-                  <td>120₽</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка с сушкой по форме</td>
-                  <td>250₽</td>
-                  <td>320₽</td>
-                  <td>360₽</td>
-                  <td>440₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Стрижка горяч. ножницами</td>
-                  <td>690₽</td>
-                  <td>890₽</td>
-                  <td>1190₽</td>
-                  <td>1290₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Оформление челки</td>
-                  <td>70₽</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="t_name">Сушка по форме (без стрижки)</td>
-                  <td>120₽</td>
-                  <td>170₽</td>
-                  <td>200₽</td>
-                  <td>280₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Укладка феном</td>
-                  <td>170₽</td>
-                  <td>200₽</td>
-                  <td>250₽</td>
-                  <td>350₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Укладка бигуди, диффузор</td>
-                  <td>200₽</td>
-                  <td>250₽</td>
-                  <td>350₽</td>
-                  <td>400₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Укладка фен+утюжок</td>
-                  <td></td>
-                  <td>300₽</td>
-                  <td>450₽</td>
-                  <td>550₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Начес</td>
-                  <td>50₽</td>
-                  <td>50₽</td>
-                  <td>100₽</td>
-                  <td>100₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Плетение косичек (1 единица)</td>
-                  <td>50₽</td>
-                  <td>50₽</td>
-                  <td>100₽</td>
-                  <td>100₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Плетение французской косы</td>
-                  <td>250₽</td>
-                  <td>250₽</td>
-                  <td>250₽</td>
-                  <td>250₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Прическа на основе французской косы</td>
-                  <td></td>
-                  <td>400₽</td>
-                  <td>500₽</td>
-                  <td>700₽</td>
-                </tr>
-                <tr>
-                  <td class="t_name">Прическа модельная (вечер. свадеб)</td>
-                  <td>400₽</td>
-                  <td>600₽</td>
-                  <td>1200₽</td>
-                  <td>1600₽</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
     </div>
-    <link rel="stylesheet" href="css/prices.min.css">
+    <link rel="stylesheet" href="css/services.min.css">
     <script src="https://use.fontawesome.com/e21d0d3332.js"></script>
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/scripts.min.js"></script>

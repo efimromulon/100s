@@ -1,6 +1,7 @@
 doctype html
 html
 	body
+		include includes/metro_overlay.pug
 		.wrapper.grid
 			.wrapper_left.wrapper_item
 				include includes/left_menu.pug
@@ -8,103 +9,21 @@ html
 				include includes/top_menu.pug
 				.wr_price_select.grid
 					.wr_price_select-item
-						.wr_p_metro_span_box
-							span.wr_p_metro_info_icon
-							span.wr_p_metro_info_name ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ
+						.wr_p_metro_info_icon
+							button#burger.header_burger.hamburger(type='button')
+								span.hamburger_box
+									span.hamburger_inner
+						.wr_p_metro_info_name
+							| ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ
 					.wr_price_select-item
-						.wr_p_left_select
-							ul.ul_1lvl
-								li.li_1lvl.li1
-									a(href="#") ПАРИКМАХЕРСКИЕ УСЛУГИ
-									ul.ul_2lvl
-										li.li_2lvl
-											a(href="#") ЖЕНСКИЙ ЗАЛ ЭКОНОМ
-											ul.ul_3lvl
-												li.li_3lvl
-													a(href="#") СТРИЖКИ, УКЛАДКИ, ПРИЧЕСКИ
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ ESTEL (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ MATRIX (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОБЕСЦВЕЧИВАНИЕ И МЕЛИРОВАНИЕ | ОМБРЭ (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ХИМИЧЕСКАЯ ЗАВИВКА (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ЛЕЧЕНИЕ И УХОД ЗА ВОЛОСАМИ
-												li.li_3lvl
-													a(href="#") ДОП. УСЛУГИ И МАТЕРИАЛЫ
-										li.li_2lvl
-											a(href="#") ЖЕНСКИЙ ЗАЛ БИЗНЕС
-											ul.ul_3lvl
-												li.li_3lvl
-													a(href="#") СТРИЖКИ, УКЛАДКИ, ПРИЧЕСКИ
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ ESTEL (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ MATRIX (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОБЕСЦВЕЧИВАНИЕ И МЕЛИРОВАНИЕ | ОМБРЭ (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ХИМИЧЕСКАЯ ЗАВИВКА (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ЛЕЧЕНИЕ И УХОД ЗА ВОЛОСАМИ
-												li.li_3lvl
-													a(href="#") ДОП. УСЛУГИ И МАТЕРИАЛЫ
-										li.li_2lvl
-											a(href="#") ЖЕНСКИЙ ЗАЛ VIP
-											ul.ul_3lvl
-												li.li_3lvl
-													a(href="#") СТРИЖКИ, УКЛАДКИ, ПРИЧЕСКИ
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ ESTEL (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОКРАШИВАНИЕ MATRIX (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ОБЕСЦВЕЧИВАНИЕ И МЕЛИРОВАНИЕ | ОМБРЭ (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ХИМИЧЕСКАЯ ЗАВИВКА (+МЫТЬЕ)
-												li.li_3lvl
-													a(href="#") ЛЕЧЕНИЕ И УХОД ЗА ВОЛОСАМИ
-												li.li_3lvl
-													a(href="#") ДОП. УСЛУГИ И МАТЕРИАЛЫ
-										li.li_2lvl
-											a(href="#") ЖУЖСКОЙ ЗАЛ
-								li.li_1lvl.li1
-									a(href="#") МАНИКЮР
-								li.li_1lvl.li1
-									a(href="#") ПЕДИКЮР
-								li.li_1lvl.li1
-									a(href="#") КОСМЕТОЛОГИЯ
-								li.li_1lvl.li1
-									a(href="#") МАССАЖ | СПА
-								li.li_1lvl.li1
-									a(href="#") СОЛЯРИЙ
-									ul.ul_2lvl
-										li.li_2lvl
-											a(href="#") СОЛЯРИЙ 2 - 1
-											ul.ul_3lvl
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 1
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 2
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 3
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 4
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 5
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 6
-												li.li_3lvl
-													a(href="#") СОЛЯРИЙ 3 - 
-										li.li_2lvl
-											a(href="#") СОЛЯРИЙ 2 - 2
-										li.li_2lvl
-											a(href="#") СОЛЯРИЙ 2 - 3
-										li.li_2lvl
-											a(href="#") СОЛЯРИЙ 2 - 4
+						include includes/price_accordeon.pug
 					.wr_price_select-item
+						.table_head
+							.th_name_1
+								| ЖЕНСКИЙ ЗАЛ ЭКОНОМ
+							.th_name_2
+								| СТРИЖКИ, УКЛАДКИ, ПРИЧЕСКИ
+						include includes/price_table_1.pug
 		link(rel='stylesheet', href='css/prices.min.css')
 		script(src='https://use.fontawesome.com/e21d0d3332.js')
 		script(src='js/jquery-2.1.4.js')
